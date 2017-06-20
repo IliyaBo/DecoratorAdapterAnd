@@ -10,4 +10,13 @@
 
 @implementation Raven
 
+- (void)flySeekAndDestroy{
+    NSLog(@"Angry Flight");
+}
+
+- (void)voice{
+    NSLog(@"Kar- kar -kar");
+}
+
+
 @end

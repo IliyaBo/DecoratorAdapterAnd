@@ -7,11 +7,26 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Report.h"
+#import "PrinterDecorator.h"
+#import "Raven.h"
+#import "RavenAdapter.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        //Decorator?
+        
+        Report *report = [Report new];
+        [report setString:@"DADADA"];
+        
+        PrinterDecorator *decorator = [[PrinterDecorator alloc]initWithPrinter:report];
+        [decorator printString];
+        
+        //Adapter
+        Raven *raven = [Raven new];
+        RavenAdapter *adapter = [[RavenAdapter alloc]initWithRaven:raven];
+        [adapter fly];
+        [adapter sing];
     }
     return 0;
 }

@@ -10,4 +10,7 @@
 
 @interface Raven : NSObject
 
+- (void)flySeekAndDestroy;
+- (void)voice;
+
 @end

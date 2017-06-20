@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BirdProtocol.h"
+#import "Raven.h"
 
-@interface RavenAdapter : NSObject
+@interface RavenAdapter : NSObject<BirdProtocol>
+
+- (instancetype)initWithRaven:(Raven *)raven;
 
 @end

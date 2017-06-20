@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		041866CE1EF9866600A165C5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 041866CD1EF9866600A165C5 /* main.m */; };
+		041866D61EF986A200A165C5 /* PlainPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 041866D51EF986A200A165C5 /* PlainPrinter.m */; };
+		041866DA1EF987D800A165C5 /* PrinterDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = 041866D91EF987D800A165C5 /* PrinterDecorator.m */; };
+		041866DD1EF98AEF00A165C5 /* Report.m in Sources */ = {isa = PBXBuildFile; fileRef = 041866DC1EF98AEF00A165C5 /* Report.m */; };
+		041866E31EF98D7C00A165C5 /* Raven.m in Sources */ = {isa = PBXBuildFile; fileRef = 041866E21EF98D7C00A165C5 /* Raven.m */; };
+		041866E61EF98E2000A165C5 /* RavenAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 041866E51EF98E2000A165C5 /* RavenAdapter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +30,18 @@
 /* Begin PBXFileReference section */
 		041866CA1EF9866600A165C5 /* App2006 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = App2006; sourceTree = BUILT_PRODUCTS_DIR; };
 		041866CD1EF9866600A165C5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		041866D41EF986A200A165C5 /* PlainPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlainPrinter.h; sourceTree = "<group>"; };
+		041866D51EF986A200A165C5 /* PlainPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlainPrinter.m; sourceTree = "<group>"; };
+		041866D71EF986FA00A165C5 /* StringPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringPrinter.h; sourceTree = "<group>"; };
+		041866D81EF987D800A165C5 /* PrinterDecorator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrinterDecorator.h; sourceTree = "<group>"; };
+		041866D91EF987D800A165C5 /* PrinterDecorator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrinterDecorator.m; sourceTree = "<group>"; };
+		041866DB1EF98AEF00A165C5 /* Report.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Report.h; sourceTree = "<group>"; };
+		041866DC1EF98AEF00A165C5 /* Report.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Report.m; sourceTree = "<group>"; };
+		041866E01EF98D5100A165C5 /* BirdProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirdProtocol.h; sourceTree = "<group>"; };
+		041866E11EF98D7C00A165C5 /* Raven.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Raven.h; sourceTree = "<group>"; };
+		041866E21EF98D7C00A165C5 /* Raven.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Raven.m; sourceTree = "<group>"; };
+		041866E41EF98E2000A165C5 /* RavenAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RavenAdapter.h; sourceTree = "<group>"; };
+		041866E51EF98E2000A165C5 /* RavenAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RavenAdapter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +74,37 @@
 		041866CC1EF9866600A165C5 /* App2006 */ = {
 			isa = PBXGroup;
 			children = (
+				041866DF1EF98D3200A165C5 /* Decorator */,
 				041866CD1EF9866600A165C5 /* main.m */,
+				041866DE1EF98D2600A165C5 /* Adapter */,
 			);
 			path = App2006;
+			sourceTree = "<group>";
+		};
+		041866DE1EF98D2600A165C5 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				041866E01EF98D5100A165C5 /* BirdProtocol.h */,
+				041866E11EF98D7C00A165C5 /* Raven.h */,
+				041866E21EF98D7C00A165C5 /* Raven.m */,
+				041866E41EF98E2000A165C5 /* RavenAdapter.h */,
+				041866E51EF98E2000A165C5 /* RavenAdapter.m */,
+			);
+			name = Adapter;
+			sourceTree = "<group>";
+		};
+		041866DF1EF98D3200A165C5 /* Decorator */ = {
+			isa = PBXGroup;
+			children = (
+				041866D71EF986FA00A165C5 /* StringPrinter.h */,
+				041866D41EF986A200A165C5 /* PlainPrinter.h */,
+				041866D51EF986A200A165C5 /* PlainPrinter.m */,
+				041866D81EF987D800A165C5 /* PrinterDecorator.h */,
+				041866D91EF987D800A165C5 /* PrinterDecorator.m */,
+				041866DB1EF98AEF00A165C5 /* Report.h */,
+				041866DC1EF98AEF00A165C5 /* Report.m */,
+			);
+			name = Decorator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +165,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				041866CE1EF9866600A165C5 /* main.m in Sources */,
+				041866E31EF98D7C00A165C5 /* Raven.m in Sources */,
+				041866DA1EF987D800A165C5 /* PrinterDecorator.m in Sources */,
+				041866D61EF986A200A165C5 /* PlainPrinter.m in Sources */,
+				041866E61EF98E2000A165C5 /* RavenAdapter.m in Sources */,
+				041866DD1EF98AEF00A165C5 /* Report.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

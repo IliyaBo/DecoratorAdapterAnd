@@ -7,7 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "StringPrinter.h"
 
-@interface PrinterDecorator : NSObject
+@interface PrinterDecorator : NSObject<StringPrinter>
+
+@property(nonatomic, copy)NSString *string;
+- (instancetype)initWithPrinter:(id<StringPrinter>)printer;
 
 @end

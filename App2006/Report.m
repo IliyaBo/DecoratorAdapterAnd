@@ -10,4 +10,8 @@
 
 @implementation Report
 
+- (void)printString{
+    NSLog(@"%@", self.string);
+}
+
 @end

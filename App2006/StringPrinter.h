@@ -10,4 +10,8 @@
 
 @protocol StringPrinter <NSObject>
 
+- (void)printString;
+- (void)setString:(NSString *)string;
+- (NSString *)string;
+
 @end

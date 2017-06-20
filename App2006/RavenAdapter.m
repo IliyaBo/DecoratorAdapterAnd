@@ -7,7 +7,31 @@
 //
 
 #import "RavenAdapter.h"
+#import "Raven.h"
+
+@interface RavenAdapter()
+
+@property(nonatomic,strong)Raven *raven;
+
+
+@end
 
 @implementation RavenAdapter
+
+- (instancetype)initWithRaven:(Raven *)raven{
+    self = [super init];
+    if(self){
+        _raven = raven;
+    }
+    return self;
+}
+
+- (void)fly{
+    [self.raven flySeekAndDestroy];
+}
+
+- (void)sing{
+    [self.raven voice];
+}
 
 @end

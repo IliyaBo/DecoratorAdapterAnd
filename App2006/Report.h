@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "StringPrinter.h"
 
-@interface Report : NSObject
+@interface Report : NSObject<StringPrinter>
+
+@property(nonatomic,strong)NSString *string;
 
 @end

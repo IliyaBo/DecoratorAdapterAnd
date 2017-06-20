@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @protocol BirdProtocol <NSObject>
-
+- (void)fly;
+- (void)sing;
 @end

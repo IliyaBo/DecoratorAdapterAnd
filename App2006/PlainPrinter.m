@@ -10,4 +10,10 @@
 
 @implementation PlainPrinter
 
+- (void)printString{
+    if(self.string){
+        NSLog(@"%@", self.string);
+    }
+}
+
 @end
